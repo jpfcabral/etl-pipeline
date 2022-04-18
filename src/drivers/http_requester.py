@@ -1,8 +1,9 @@
 from typing import Dict
 import requests
+from .interfaces.http_requester import HttpRequesterInterface
 
 
-class HttpRequester:
+class HttpRequester(HttpRequesterInterface):
     def __init__(self, url):
         self.__url = url
 
